@@ -1,0 +1,234 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    transition: 0.5s all ease;
+}
+
+.flex-container {
+    width: 100%;
+    display: flex;
+    border: 2px solid rgb(103, 45, 84);
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    background-image: url(pokemonbg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+img {
+    width: 300px;
+}
+
+.box {
+    width: auto;
+    height: auto;
+    border: 3px solid grey;
+}
+
+#box1 {
+    background-color: rgb(209, 149, 20);
+}
+
+#box2 {
+    background-color: rgb(12, 182, 12);
+}
+
+#box3 {
+    background-color: rgb(252, 248, 33);
+}
+
+#box4 {
+    background-color: rgb(120, 206, 240);
+}
+
+#box5 {
+    background-color: rgb(167, 0, 201);
+}
+
+#box6 {
+    background-color: rgb(255, 145, 187);
+}
+
+#box7 {
+    background-color: rgb(255, 137, 220);
+}
+
+#box8 {
+    background-color: rgb(0, 211, 28);
+}
+
+#box9 {
+    background-color: rgb(252, 220, 39);
+}
+
+#box10 {
+    background-color: rgb(255, 215, 36);
+}
+
+#box11 {
+    background-color: rgb(99, 72, 255);
+}
+
+#box12 {
+    background-color: rgb(248, 236, 168);
+}
+
+.name {
+    font-family: "Play", sans-serif;
+    display: none;
+
+}
+
+.poke {
+    display: none;
+}
+
+.water,
+.bug,
+.normal,
+.fairy,
+.dragon,
+.fighting,
+.poison,
+.flying,
+.psychic,
+.grass,
+.electric {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .box:hover {
+        background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7c1cfff2-db8d-44cd-8a13-cb2a4162fae6/dd2zouo-047f7b3f-b895-43ac-82a4-abb6ca12c52a.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdjMWNmZmYyLWRiOGQtNDRjZC04YTEzLWNiMmE0MTYyZmFlNlwvZGQyem91by0wNDdmN2IzZi1iODk1LTQzYWMtODJhNC1hYmI2Y2ExMmM1MmEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.EFI6YQ0acRLpYHzupMAxV_N4KMcpNWT-_3RJ4TV-4eU);
+    }
+
+    .box {
+        width: 90%;
+        margin: 10px;
+        height: auto;
+        flex-flow: row;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+    }
+
+    .flex-container {
+        width: 100%;
+        display: flex;
+        border: 2px solid rgb(103, 45, 84);
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-items: center;
+        gap: 5px;
+    }
+
+    img {
+        width: 15%;
+    }
+
+    .name {
+        font-family: "Play", sans-serif;
+        display: flex;
+        font-size: xx-large;
+    }
+
+    .poke {
+        width: 18%;
+        height: 90%;
+        margin-top: 15px;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .box {
+        width: 100%;
+        margin: 10px;
+        height: auto;
+        border: 3px solid grey;
+        flex-flow: column;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+    }
+
+    .poke {
+        display: none;
+    }
+
+    img {
+        width: 50%;
+    }
+
+    .name {
+        font-family: 'Courier New', Courier, monospace;
+        display: flex;
+        font-size: xx-large;
+    }
+
+    .water,
+    .bug,
+    .normal,
+    .fairy,
+    .fighting,
+    .poison,
+    .flying,
+    .psychic,
+    .grass,
+    .electric {
+        display: flex;
+        font-family: "Play", sans-serif;
+        border-radius: 20px;
+        width: 120px;
+        color: white;
+        font-size: 20px;
+        margin-bottom: 7px;
+        justify-content: center;
+    }
+
+    .water {
+        background-color: rgb(63, 135, 218);
+    }
+
+    .bug {
+        background-color: rgb(97, 161, 60);
+    }
+
+    .normal {
+        background-color: rgb(91, 91, 91);
+    }
+
+    .fairy {
+        background-color: rgb(207, 34, 181);
+    }
+
+    .fighting {
+        background-color: rgb(161, 116, 31);
+    }
+
+    .poison {
+        background-color: rgb(153, 15, 160);
+    }
+
+    .flying {
+        background-color: rgb(70, 170, 225);
+    }
+
+    .psychic {
+        background-color: rgb(218, 32, 103);
+    }
+
+    .grass {
+        background-color: rgb(27, 150, 52);
+    }
+
+    .electric {
+        background-color: rgb(221, 195, 27);
+    }
+}
