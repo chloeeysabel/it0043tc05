@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Simulator</title>
+    <link rel="stylesheet" href="tsa7.css">
+</head>
+<body>
+    <button id="resetFlexbox" type="button">Reset Flexbox</button>
+    <div class="control-group">
+        <button type="button">Gap</button>
+        <input type="number" id="gap" value="0"><br>
+    </div>
+    
+    <h2>Flex Direction</h2> 
+    <div class="control-group">
+        <button id="flexRow" type="button">Row</button>
+        <button id="flexColumn" type="button">Column</button>
+    </div>
+    
+    <h3>Justify Content</h3>
+    <div class="control-group">
+        <button id="justifyStart" type="button">Start</button>
+        <button id="justifyCenter" type="button">Center</button>
+        <button id="justifyEnd" type="button">End</button>
+        <button id="justifySpaceBetween" type="button">Space Between</button>
+        <button id="justifySpaceAround" type="button">Space Around</button>
+        <button id="justifySpaceEvenly" type="button">Space Evenly</button>
+    </div>
+    
+    <h3>Align Items</h3>
+    <div class="control-group">
+        <button id="alignStart" type="button">Start</button>
+        <button id="alignCenter" type="button">Center</button>
+        <button id="alignEnd" type="button">End</button>
+    </div>
+    
+    <h3>Flex Grow</h3>
+    <div class="control-group">
+        <button id="growReset" type="button">Reset</button>
+        <button id="growAll" type="button">Grow All</button>
+        <button id="box1Grow" type="button">Box 1</button>
+        <input id="box1Input" type="number" value="0"><br>
+        <button id="box2Grow" type="button">Box 2</button>
+        <input id="box2Input" type="number" value="0"><br>
+        <button id="box3Grow" type="button">Box 3</button>
+        <input id="box3Input" type="number" value="0"><br>
+    </div>
+    
+    <div id="flexContainer" class="flex-container">
+        <div id="box1" class="box">1</div>
+        <div id="box2" class="box">2</div>
+        <div id="box3" class="box">3</div>
+    </div>
+
+    <button type="button">Add</button>
+
+    <script src="tsa7.js"></script>
+</body>
+</html>
